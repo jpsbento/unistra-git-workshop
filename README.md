@@ -40,6 +40,13 @@ python app.py
 
 The application will be available at `http://localhost:5000`
 
+### Example Usage
+
+Run the example script to see all API endpoints in action:
+```bash
+python example_usage.py
+```
+
 ### API Endpoints
 
 #### Get Sun Position
@@ -72,6 +79,7 @@ curl "http://localhost:5000/magnitude/brightness-ratio?mag_diff=5"
 - `app.py` - Main Flask application with API endpoints
 - `astronomy.py` - Astronomy calculation functions
 - `utils.py` - Utility functions for formatting and validation
+- `example_usage.py` - Example script demonstrating API usage
 - `requirements.txt` - Python dependencies
 
 ### Contributing
