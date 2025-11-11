@@ -62,8 +62,8 @@ def sun_position():
             'timestamp': format_timestamp()
         }
         return jsonify(create_success_response(response_data))
-    except Exception as e:
-        return jsonify(create_error_response(f"Error calculating sun position: {str(e)}", 500))
+    except Exception:
+        return jsonify(create_error_response("Error calculating sun position", 500))
 
 
 @app.route('/magnitude/absolute-to-apparent')
@@ -91,8 +91,8 @@ def abs_to_app_magnitude():
         return jsonify(create_success_response(response_data))
     except ValueError as e:
         return jsonify(create_error_response(str(e)))
-    except Exception as e:
-        return jsonify(create_error_response(f"Error calculating magnitude: {str(e)}", 500))
+    except Exception:
+        return jsonify(create_error_response("Error calculating magnitude", 500))
 
 
 @app.route('/magnitude/apparent-to-absolute')
@@ -120,8 +120,8 @@ def app_to_abs_magnitude():
         return jsonify(create_success_response(response_data))
     except ValueError as e:
         return jsonify(create_error_response(str(e)))
-    except Exception as e:
-        return jsonify(create_error_response(f"Error calculating magnitude: {str(e)}", 500))
+    except Exception:
+        return jsonify(create_error_response("Error calculating magnitude", 500))
 
 
 @app.route('/magnitude/distance')
@@ -150,8 +150,8 @@ def distance_from_magnitudes():
         return jsonify(create_success_response(response_data))
     except ValueError as e:
         return jsonify(create_error_response(str(e)))
-    except Exception as e:
-        return jsonify(create_error_response(f"Error calculating distance: {str(e)}", 500))
+    except Exception:
+        return jsonify(create_error_response("Error calculating distance", 500))
 
 
 @app.route('/magnitude/brightness-ratio')
@@ -178,9 +178,11 @@ def brightness_ratio():
         return jsonify(create_success_response(response_data))
     except ValueError as e:
         return jsonify(create_error_response(str(e)))
-    except Exception as e:
-        return jsonify(create_error_response(f"Error calculating brightness ratio: {str(e)}", 500))
+    except Exception:
+        return jsonify(create_error_response("Error calculating brightness ratio", 500))
 
 
 if __name__ == '__main__':
+    # Note: debug=True is useful for development but should be set to False in production
+    # to avoid security vulnerabilities. For learning purposes, we keep it enabled.
     app.run(debug=True, host='0.0.0.0', port=5000)
