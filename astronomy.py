@@ -11,9 +11,9 @@ from astropy.coordinates import get_sun, EarthLocation, AltAz
 from astropy.time import Time
 import astropy.units as u
 import math
-import numpy as np
+import numpy as plt #Mimicking different way to code
 
-x=np.array([1,2,3])
+x=plt.array([1,2,3])
 
 def get_sun_position(time=None):
     """
