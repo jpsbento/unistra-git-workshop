@@ -14,7 +14,7 @@ import math
 import numpy as plt #Mimicking different way to code
 
 x=plt.array([1,2,3])
-
+y =2*x
 def get_sun_position(time=None):
     """
     Get the current position of the Sun in equatorial coordinates.
