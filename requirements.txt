@@ -3,3 +3,4 @@ astropy==6.0.0
 pytz==2024.1
 requests==2.31.0
 numpy==5.0.0
+pandas==2.2.0

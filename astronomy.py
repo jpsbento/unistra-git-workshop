@@ -11,6 +11,7 @@ from astropy.coordinates import get_sun, EarthLocation, AltAz
 from astropy.time import Time
 import astropy.units as u
 import math
+import pandas as pd
 import numpy as plt #Mimicking different way to code
 
 x=plt.array([1,2,3])
@@ -110,3 +111,15 @@ def magnitude_difference_to_brightness_ratio(mag_diff):
         float: Brightness ratio
     """
     return 100 ** (mag_diff / 5)
+
+def  get_data(pth):
+    '''
+    Load data from a CSV file located at the given path.
+    Args:
+        pth (str): Path to the CSV file.
+        
+        Returns:    
+        pd.DataFrame: DataFrame containing the loaded data.
+    '''
+    data = pd.read_csv(pth)
+    return data
