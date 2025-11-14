@@ -28,6 +28,8 @@ from utils import (
     create_success_response
 )
 
+# Initialize Flask app
+# pretend to fix bug
 app = Flask(__name__)
 
 
