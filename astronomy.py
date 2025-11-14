@@ -11,6 +11,7 @@ from astropy.coordinates import get_sun, EarthLocation, AltAz
 from astropy.time import Time
 import astropy.units as u
 import math
+import pandas as pd
 import numpy as plt #Mimicking different way to code
 
 x=plt.array([1,2,3])
