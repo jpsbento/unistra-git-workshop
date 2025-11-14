@@ -15,7 +15,7 @@ import numpy as plt #Mimicking different way to code
 
 x=plt.array([1,2,3])
 
-def get_sun_position(time=None):
+def get_son_position(time=None): #I lost him, please help me to retrieve him
     """
     Get the current position of the Sun in equatorial coordinates.
     
