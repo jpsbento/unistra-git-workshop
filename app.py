@@ -39,6 +39,7 @@ def index():
     return jsonify({
         'message': 'Welcome to the Astronomy Calculator API',
         'endpoints': {
+            '/health': 'Health check endpoint',
             '/sun': 'Get current Sun position (RA and DEC)',
             '/magnitude/absolute-to-apparent': 'Convert absolute to apparent magnitude (params: M, distance)',
             '/magnitude/apparent-to-absolute': 'Convert apparent to absolute magnitude (params: m, distance)',
@@ -47,6 +48,16 @@ def index():
         },
         'timestamp': format_timestamp()
     })
+
+
+@app.route('/health')
+def health():
+    """Health check endpoint."""
+    return jsonify(create_success_response({
+        'status': 'healthy',
+        'service': 'Astronomy Calculator API',
+        'timestamp': format_timestamp()
+    }))
 
 
 @app.route('/sun')
