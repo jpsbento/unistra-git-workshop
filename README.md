@@ -1,5 +1,5 @@
 # unistra-git-workshop
-An example repository for a git workshop
+An example repository for a git workshop, but who is gonna read that anyway
 
 ## Astronomy Calculator App
 

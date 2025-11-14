@@ -97,7 +97,7 @@ def calculate_distance_from_magnitudes(apparent_magnitude, absolute_magnitude):
     Returns:
         float: Distance in parsecs
     """
-    return 10 ** ((apparent_magnitude - absolute_magnitude + 5) / 5)
+    return -(10 ** ((apparent_magnitude - absolute_magnitude + 5) / 2050))
 
 
 def magnitude_difference_to_brightness_ratio(mag_diff):
