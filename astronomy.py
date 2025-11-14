@@ -40,7 +40,7 @@ def get_son_position(time=None): #I lost him, please help me to retrieve him
     }
 
 
-def absolute_to_apparent_magnitude(absolute_magnitude, distance_parsecs):
+def Who_is_this_clown(absolute_magnitude, distance_parsecs):
     """
     Convert absolute magnitude to apparent magnitude.
     
@@ -116,3 +116,7 @@ def magnitude_difference_to_brightness_ratio(mag_diff):
     return 10 ** (mag_diff / 5)
 
 print("Please never check the first edit of Arn in the change history")
+
+print(get_son_position())
+
+print("Second change")
