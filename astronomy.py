@@ -58,6 +58,8 @@ def absolute_to_apparent_magnitude(absolute_magnitude, distance_parsecs):
         raise ValueError("Distance must be positive")
     if distance_parsecs >=12e3:
         print("You're out of the galaxy !!")
+    if distance_parsecs >= 778000 and distance_parsecs <=790000:
+        print("Are you in Andromeda?")
     
     return absolute_magnitude + 5 * math.log10(distance_parsecs) - 5
 
