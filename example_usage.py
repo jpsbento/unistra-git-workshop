@@ -25,7 +25,10 @@ def print_response(title, response):
 
 
 def main():
-    """Run example API calls."""
+    """
+    Run example API calls.
+    Is AI coding itself yet?
+    """
     
     print("Astronomy Calculator API Examples")
     print("=" * 60)
