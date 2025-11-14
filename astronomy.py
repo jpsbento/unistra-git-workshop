@@ -14,7 +14,7 @@ import math
 import numpy as plt #Mimicking different way to code
 
 x=plt.array([1,2,3])
-
+y =2*x
 def get_son_position(time=None): #I lost him, please help me to retrieve him
     """
     Get the current position of the Sun in equatorial coordinates.
@@ -97,8 +97,8 @@ def calculate_distance_from_magnitudes(apparent_magnitude, absolute_magnitude):
     Returns:
         float: Distance in parsecs
     """
-    return -(10 ** ((apparent_magnitude - absolute_magnitude + 5) / 2050))
-
+    distance = 10 ** ((apparent_magnitude - absolute_magnitude + 5) / 50)
+    return distance
 
 def magnitude_difference_to_brightness_ratio(mag_diff):
     """
