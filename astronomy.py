@@ -15,7 +15,7 @@ import numpy as plt #Mimicking different way to code
 
 x=plt.array([1,2,3])
 
-def get_sun_position(time=None):
+def get_son_position(time=None): #I lost him, please help me to retrieve him
     """
     Get the current position of the Sun in equatorial coordinates.
     
@@ -40,7 +40,7 @@ def get_sun_position(time=None):
     }
 
 
-def absolute_to_apparent_magnitude(absolute_magnitude, distance_parsecs):
+def Who_is_this_clown(absolute_magnitude, distance_parsecs):
     """
     Convert absolute magnitude to apparent magnitude.
     
@@ -58,6 +58,8 @@ def absolute_to_apparent_magnitude(absolute_magnitude, distance_parsecs):
         raise ValueError("Distance must be positive")
     if distance_parsecs >=12e3:
         print("You're out of the galaxy !!")
+    if distance_parsecs >= 778000 and distance_parsecs <=790000:
+        print("Are you in Andromeda?")
     
     return absolute_magnitude + 5 * math.log10(distance_parsecs) - 5
 
@@ -95,7 +97,7 @@ def calculate_distance_from_magnitudes(apparent_magnitude, absolute_magnitude):
     Returns:
         float: Distance in parsecs
     """
-    return 10 ** ((apparent_magnitude - absolute_magnitude + 5) / 5)
+    return -(10 ** ((apparent_magnitude - absolute_magnitude + 5) / 2050))
 
 
 def magnitude_difference_to_brightness_ratio(mag_diff):
@@ -111,4 +113,10 @@ def magnitude_difference_to_brightness_ratio(mag_diff):
     Returns:
         float: Brightness ratio
     """
-    return 100 ** (mag_diff / 5)
+    return 10 ** (mag_diff / 5)
+
+print("Please never check the first edit of Arn in the change history")
+
+print(get_son_position())
+
+print("Second change")
