@@ -49,7 +49,7 @@ def index():
 
 @app.route('/sun')
 def sun_position():
-    """Get the current position of the Sun."""
+    """Get the current position of the Sun. Moves Thomas' mom out of the way"""
     try:
         position = get_sun_position()
         response_data = {
