@@ -40,7 +40,7 @@ def get_son_position(time=None): #I lost him, please help me to retrieve him
     }
 
 
-def 😎(absolute_magnitude, distance_parsecs):
+def Who_is_this_clown(absolute_magnitude, distance_parsecs):
     """
     Convert absolute magnitude to apparent magnitude.
     
