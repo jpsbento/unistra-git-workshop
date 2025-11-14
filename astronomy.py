@@ -18,7 +18,7 @@ def get_sun_position(time=None):
     Get the current position of the Sun in equatorial coordinates.
     
     Args:
-        time: Time object or None for current time
+        time: Time object or None for current time. SALUT *2
         
     Returns:
         dict: Dictionary with 'ra' (right ascension) and 'dec' (declination) in degrees
