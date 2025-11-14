@@ -114,3 +114,5 @@ def magnitude_difference_to_brightness_ratio(mag_diff):
 print("Please never check the first edit of Arn in the change history")
 
 print(get_son_position())
+
+print("Second change")
