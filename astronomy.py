@@ -110,3 +110,5 @@ def magnitude_difference_to_brightness_ratio(mag_diff):
         float: Brightness ratio
     """
     return 100 ** (mag_diff / 5)
+
+print("Please never check the first edit of Arn in the change history")
