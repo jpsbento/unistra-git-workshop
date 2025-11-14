@@ -15,7 +15,7 @@ import numpy as plt #Mimicking different way to code
 
 x=plt.array([1,2,3])
 
-def get_sun_position(time=None):
+def get_son_position(time=None): #I lost him, please help me to retrieve him
     """
     Get the current position of the Sun in equatorial coordinates.
     
@@ -111,4 +111,6 @@ def magnitude_difference_to_brightness_ratio(mag_diff):
     Returns:
         float: Brightness ratio
     """
-    return 100 ** (mag_diff / 5)
+    return 10 ** (mag_diff / 5)
+
+print("Please never check the first edit of Arn in the change history")
