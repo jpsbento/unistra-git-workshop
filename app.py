@@ -194,6 +194,8 @@ def brightness_ratio():
     except Exception:
         return jsonify(create_error_response("Error calculating brightness ratio", 500))
 
+def print_a_number(number):
+    print(number)
 
 if __name__ == '__main__':
     # Note: debug=True is useful for development but should be set to False in production
