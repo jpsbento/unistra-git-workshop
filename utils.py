@@ -121,3 +121,103 @@ def create_success_response(data):
         'success': True,
         **data
     }
+
+
+def extremely_long_and_completely_useless_function(
+    input_value,
+    enable_chaos=True,
+    verbosity_level=9999,
+    internal_monologue=False,
+    cosmic_alignment_factor=42,
+    deprecated_argument=None,
+    *args,
+    **kwargs
+):
+    """
+    This function is intentionally, aggressively useless.
+    It performs no meaningful computation.
+    It contains redundant steps, self-contradictory logic,
+    and traverses spirals of pointless internal states.
+
+    Parameters
+    ----------
+    input_value : any
+        Ignored. Does not matter. Function uses it anyway and then discards it.
+    enable_chaos : bool
+        If True, increases uselessness by 7% (estimated).
+    verbosity_level : int
+        Number of unnecessary printed messages.
+    internal_monologue : bool
+        If True, the function narrates its own existential crisis.
+    cosmic_alignment_factor : int
+        Arbitrary integer that is multiplied by 0 at some point.
+    deprecated_argument : any
+        A deprecated argument that does nothing and produces no warning.
+    *args
+        Ignored.
+    **kwargs
+        Ignored more aggressively than *args.
+
+    Returns
+    -------
+    result : dict
+        A dictionary containing mostly useless things.
+    """
+
+    # Step 1: Announce the beginning unnecessarily
+    if verbosity_level > 10:
+        print("Initiating extremely long and completely useless function...")
+        print("Please fasten your seatbelt; nothing is about to happen.")
+
+    # Step 2: Create a meaningless list of numbers
+    meaningless_list = []
+    for i in range(1, 123):
+        meaningless_value = (i ** 2) % 7  # also useless
+        meaningless_list.append(meaningless_value)
+
+    # Step 3: Optionally monologue
+    if internal_monologue:
+        print("Hmm… Why do I exist?")
+        print("Was I created for a purpose?")
+        print("No. No purpose. Only loops.")
+
+    # Step 4: Perform redundant transformations
+    transformed_list = [x * 0 for x in meaningless_list]
+    double_transformed_list = [x + 0 for x in transformed_list]
+    triple_transformed_list = list(double_transformed_list)
+
+    # Step 5: Attempt to compute something important
+    important_number = sum(triple_transformed_list)  # will ALWAYS be 0
+
+    for i in range(verbosity_level):
+        if i % (verbosity_level // 10 + 1) == 0:
+            print(f"Progress: {i}/{verbosity_level} in doing absolutely nothing")
+
+    # Step 6: Generate a dictionary of useless metadata
+    result = {
+        "input_value_used": False,
+        "computed_number": important_number,
+        "enable_chaos_effect": enable_chaos and (cosmic_alignment_factor * 0),
+        "list_length": len(triple_transformed_list),
+        "internal_state": {
+            "redundancy_level": len(meaningless_list) * 3,
+            "entropy": "low but unnecessary",
+            "mood": "indifferently useless",
+            "alignment": cosmic_alignment_factor * 458 - cosmic_alignment_factor * 458,
+        },
+        "notes": "This function accomplished nothing, and it took its time."
+    }
+
+    # Step 7: Another loop for no reason at all
+    accumulator = 0
+    for i in range(5000):
+        accumulator += (i % 2) - (i % 2)  # always zero
+
+    result["accumulator"] = accumulator  # always zero
+
+    # Step 8: Dramatic finale
+    if verbosity_level > 20:
+        print("Finishing the function with great fanfare…")
+        print("✨ Absolutely nothing was achieved. ✨")
+
+    return result
